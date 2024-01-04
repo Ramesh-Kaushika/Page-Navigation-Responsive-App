@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootUpdateCustomer" prefHeight="465.0" prefWidth="604.0" style="-fx-background-color: #ecf0f1;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mvcsinglepattern.controller.customer.CustomerUpdateFormController">
+   <children>
+      <Pane prefHeight="465.0" prefWidth="78.0" style="-fx-background-color: #2c3e50;">
+         <children>
+            <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="22.0" layoutY="25.0" onMouseClicked="#backToLoginPage" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../assets/icons8-back-50.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TextField fx:id="txtCustomerID" layoutX="263.0" layoutY="103.0" promptText="Enter Customer ID" />
+      <Button layoutX="462.0" layoutY="103.0" mnemonicParsing="false" onAction="#btnSearchOnAction" prefHeight="26.0" prefWidth="78.0" style="-fx-background-color: #f6b93b;" text="Search" />
+      <Text layoutX="234.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Update Customer" wrappingWidth="217.21630859375">
+         <font>
+            <Font name="System Bold Italic" size="29.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtCustomerName" layoutX="134.0" layoutY="180.0" prefHeight="26.0" prefWidth="420.0" promptText="Customer Name" />
+      <TextField fx:id="txtCustomerAddress" layoutX="133.0" layoutY="290.0" prefHeight="26.0" prefWidth="420.0" promptText="Address" />
+      <TextField fx:id="txtCustomerTelephoneNo" layoutX="133.0" layoutY="235.0" prefHeight="26.0" prefWidth="420.0" promptText="Telephone no." />
+      <Button layoutX="424.0" layoutY="372.0" mnemonicParsing="false" onAction="#btnCancelOnAction" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #b71540;" text="Cancel" textFill="WHITE" />
+      <Button layoutX="173.0" layoutY="372.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="26.0" prefWidth="102.0" style="-fx-background-color: #1e3799;" text="Update" textFill="WHITE" />
+   </children>
+</AnchorPane>

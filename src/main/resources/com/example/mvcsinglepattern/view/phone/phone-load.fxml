@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loadRoot" prefHeight="477.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mvcsinglepattern.controller.phones.PhoneLoadController">
+   <children>
+      <Text fontSmoothingType="LCD" layoutX="258.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All Phones">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="520.0" layoutY="49.0" mnemonicParsing="false" onAction="#btnLoadOnAction" style="-fx-background-color: green;" text="Load All" textFill="WHITE" />
+      <TableView fx:id="vwTable" layoutX="7.0" layoutY="90.0" prefHeight="376.0" prefWidth="633.0">
+        <columns>
+          <TableColumn prefWidth="99.0" text="Phone imei" />
+          <TableColumn prefWidth="166.0" text="Brand" />
+            <TableColumn prefWidth="159.0" text="Model" />
+            <TableColumn minWidth="0.0" prefWidth="74.0" text="Ram" />
+            <TableColumn prefWidth="134.0" text="Price" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="40.0" fitWidth="44.0" layoutX="34.0" layoutY="34.0" onMouseClicked="#btnLoadBackToLoginPage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../assets/icons8-back-50.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

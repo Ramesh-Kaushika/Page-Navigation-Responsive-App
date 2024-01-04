@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootDashboard" prefHeight="446.0" prefWidth="308.0" style="-fx-background-color: #2C3A47;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.mvcsinglepattern.controller.DashBoardController">
+   <children>
+      <Text fill="#9aecdb" layoutX="97.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashoard" underline="true" wrappingWidth="113.03466796875">
+         <font>
+            <Font name="System Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <Button layoutX="59.0" layoutY="90.0" mnemonicParsing="false" onAction="#btnPhonesLogin" prefHeight="60.0" prefWidth="189.0" style="-fx-background-color: #B33771;" text="Phones" textFill="WHITE" />
+      <Button layoutX="61.0" layoutY="182.0" mnemonicParsing="false" onAction="#btnCustomerLogin" prefHeight="60.0" prefWidth="189.0" style="-fx-background-color: #D6A2E8;" text="Customer" textFill="WHITE" />
+      <Button layoutX="61.0" layoutY="274.0" mnemonicParsing="false" onAction="#btnOrderLogin" prefHeight="60.0" prefWidth="189.0" style="-fx-background-color: #F8EFBA;" text="Order" />
+      <Text fill="#eab543" layoutX="109.0" layoutY="429.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Powered by :  ACPT">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Text>
+      <Button layoutX="125.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnLogOut" style="-fx-background-color: #27ae60;" text="Log Out" textFill="WHITE" />
+   </children>
+</AnchorPane>
